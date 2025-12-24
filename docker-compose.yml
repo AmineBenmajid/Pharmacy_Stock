@@ -1,0 +1,27 @@
+services:
+  mysqldb:
+    image: mysql:8.0
+    container_name: pharmacy-mysql
+    environment:
+      - MYSQL_DATABASE=pharmacy_db
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "3307:3306"
+    # ADD THIS SECTION:
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 5s
+      retries: 10
+
+  pharmacy-app:
+    build: .
+    container_name: pharmacy-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysqldb:
+        condition: service_healthy # <--- Updated this line
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysqldb:3306/pharmacy_db?useSSL=false
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
