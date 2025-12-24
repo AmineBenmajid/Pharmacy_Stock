@@ -1,0 +1,20 @@
+{
+  "name": "Antihistamines",
+  "description": "Medications that relieve allergy symptoms by blocking histamine.",
+  "medicationsNbr": 8
+}
+{
+  "name": "Vitamins",
+  "description": "Nutritional supplements.",
+  "medicationsNbr": 0
+}
+{
+  "name": "Antibiotics",
+  "description": "Medications that fight bacterial infections.",
+  "medicationsNbr": 5
+}
+{
+  "name": "Pain Relievers",
+  "description": "Medications used to relieve pain.",
+  "medicationsNbr": 10
+}

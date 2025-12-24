@@ -1,0 +1,20 @@
+spring.application.name=pharmacy
+# 1. Connection String (Note the 'postgresql' and port '5432')
+spring.datasource.url=jdbc:postgresql://localhost:5432/pharmacy
+
+# 2. Credentials
+spring.datasource.username=postgres
+spring.datasource.password=root
+
+# 3. The Translator (Dialect)
+# Spring Boot is smart enough to detect this automatically,
+# but defining it explicitly prevents some rare bugs.
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# 4. Schema Management
+# "update" = keep data, update tables.
+# "create-drop" = delete everything on restart (good for dev).
+spring.jpa.hibernate.ddl-auto=update
+
+# Optional: Show SQL for debugging
+spring.jpa.show-sql=true

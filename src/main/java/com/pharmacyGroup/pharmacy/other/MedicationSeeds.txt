@@ -1,0 +1,43 @@
+{
+    "name": "Aspirin",
+    "dosage": 500.0,
+    "quantity": 100,
+    "expirationDate": "2025-12-31",
+    "price": 19.99
+}
+{
+    "name": "Ibuprofen",
+    "dosage": 400.0,
+    "quantity": 150,
+    "expirationDate": "2026-05-15",
+    "price": 12.49
+}
+{
+    "name": "Amoxicillin",
+    "dosage": 250.0,
+    "quantity": 200,
+    "expirationDate": "2025-11-30",
+    "price": 25.00
+}
+{
+    "name": "Metformin",
+    "dosage": 1000.0,
+    "quantity": 90,
+    "expirationDate": "2024-09-15",
+    "price": 15.75
+}
+{
+    "name": "Lisinopril",
+    "dosage": 10.0,
+    "quantity": 120,
+    "expirationDate": "2026-02-28",
+    "imageUrl": "assets/medicines/amoxicillin.jpeg",
+    "price": 18.99
+}
+{
+    "name": "Omeprazole",
+    "dosage": 20.0,
+    "quantity": 60,
+    "expirationDate": "2025-10-10",
+    "price": 22.50
+}
